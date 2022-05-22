@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ryot21/typescript-for-javascript-study/issues"
   },
-  "homepage": "https://github.com/Ryot21/typescript-for-javascript-study#readme"
+  "homepage": "https://github.com/Ryot21/typescript-for-javascript-study#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
