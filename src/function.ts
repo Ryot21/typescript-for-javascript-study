@@ -1,6 +1,7 @@
 export {};
 
-// functionキーワード（注意点：引数と戻り値）
+// functionキーワード（functionの後ろに名前がある）
+// 注意点：引数と戻り値
 
 
 // heightとweightは数字が入るのでnumber型
