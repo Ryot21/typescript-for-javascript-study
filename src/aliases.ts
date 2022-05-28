@@ -1,5 +1,7 @@
 export{};
 
+// alias型とinterfce : Objectに対してアノテーションができる。
+
 // aliasで別名を付与する場合、先頭の文字は大文字にする！
 type Mojiretsu = string;
 const foostring: string = "Hello TypeScript";
