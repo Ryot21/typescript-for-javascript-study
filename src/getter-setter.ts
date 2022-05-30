@@ -3,7 +3,7 @@ export {};
 // アクセサー機能について（オブジェクト指向プログラミングの鉄板の機能！！）
 // * getterとは、参照が出来るようにするためのメソッドを作る機能(作成したメソッドの頭に「get」をつける)
 // * setterとは、書き換えが出来るようにするメソッドを作る機能(作成したメソッドの頭に「set」をつける)
-
+// メソッドとは、、、関数の一種です。
 
 class MyNumberCard {
 	// オーナー（使用者）とシークレットナンバー（個人番号）をメンバーとして設定
@@ -14,9 +14,9 @@ class MyNumberCard {
 		return this._owner;
 	}
 	// シークレットナンバーメソッドを作る
-	set secretNumber(secretNumber: number){
+	set secretNumber(_secretNumber: number){
 		// 新しく入ってきたデータを設定（.this）する
-		this._secretNumber = secretNumber;
+		this._secretNumber = _secretNumber;
 	}
 	// 値が変更出来ているかを確認するようなメソッドを作る
 	debugPrint(){
@@ -40,7 +40,7 @@ let card1 = new MyNumberCard("龍汰", 1234567890);
 //  	 * 参照できないようにする (private) ok
 
 // 確認
-console.log(card1.owner)
+console.log(card1.secretNumber)
 // card1.owner = "千明"; //private(アクセス修飾子)のおかげで変更できない
 // card1._secretNumber;
 console.log(card1.debugPrint());
